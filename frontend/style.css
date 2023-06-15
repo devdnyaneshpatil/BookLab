@@ -28,9 +28,10 @@
     background-color: aquamarine;
     height: 100vh;
     text-align: center;
+    
 }
 #welcome{
     background-color: #90A4AE;
     width: 70%;
-    margin: auto;
+    background-position: 0%;
 }
