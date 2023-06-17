@@ -1,108 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-#nav{
-    background-color:#EA80FC;
-    height: 50px;
-}
-#nmaindiv{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.mainDiv{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-}
-
-#logo{
-    margin-left: 150px;
-}
-#button button{
-  color: blue;
-}
-
-#maindiv{
-    background-color: #0dcaf0;
-    height: 100vh;
-}
-#container{
-    width: 25%;
-    margin: auto;
-    align-content: center;
+    height: 65px;
+    justify-content: center;
+    /* gap: 10%; */
     /* border: 1px solid red; */
-    padding: 15px;
-    background-color: #f0f2f4;
+    align-items: center;
+    /* background-color: #e296f7; */
+    background: linear-gradient(55deg,#fc1abd,#e19cfa,#72d9ff);
+    border-bottom: 2px solid black;
+    position: fixed; 
+     top: 0;
+     width: 100%;  
 }
-#NavbarMainDiv img{
-  width: 5%;
-  margin-left: 200px;
-/* margin-left: 50px; */
-   }
-   #NavbarMainDiv a{
-    margin-right: 300px;
-    color: white;
-   }
-#showDiv{
-    width: 100%;
-    height: 6px;
-    margin-top: 85px;
-    background-color: white;
-    margin-bottom: 50px;
-}
-#container{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-#form{
-    display: grid;
-    grid-template-columns: repeat(1,90%);
-    padding-left: 15px;
-    /* box-sizing: content-box; */
-}
-input{
-    height: 25px;
-    margin-bottom: 10px;
-    /* border-radius: 1px ; */
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-}
-input:placeholder-shown{
-    font-size: 16px;
-    color:black;
-    font-weight: bold;
-}
-/* h2{
-    font-size: 30px;
-    margin-top: 10px;
-} */
-input:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 1px solid orangered;
-}
-#submit{
-    height: 40px; 
-    background-color:blue;
-    border: none;
-    border-radius: 5px;
+
+.divImg{
+    height: 50px;
     cursor: pointer;
-    color: white;
+}
+.navbarInsideDiv1{
+    display: flex;
+    justify-content: center; 
+    width: 50%;
+}
+.navbarInsideDiv{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: right;
+    /* margin-left: 100px; */
+    /* width: 50%; */
+}
+
+.navbarInsideDiv img{
+    height: 35px;
+}
+
+.navbarInsideDiv input{
+   width:450px;
+   height: 35px; 
+   border-radius: 10px;
+   padding-left: 20px;
+   font-size: 15px;
+   font-weight: 500;
+   /* outline: white; */
+
+}
+
+.navbarButton{
+    background-color: #94c7fe;
+    /* background-color: none; */
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+.navbarButton:hover{
+    color:blue;
+}
+
+/* ------------------------------------- */
+.signIninput{
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.signInp{
+    margin-top: -3px;
+    font-size: 17px;
+    color: gray;
+}
+.signButton{
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
     font-weight: bold;
+    background-color: white;
 }
-#container>p{
-    padding-left: 12px;
+#appendDiv{
+    display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap:50px;
+  margin-top: 50px;
 }
-a{
-    text-decoration: none;
+/* .box{
+    width: 50px;
+} */
+.insideImg{
+    width: 100px;
 }
-#para1{
-    margin-top: -5px;
-    font-size: 14px;
-}
-#text{
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+.joinButton{
+    background: linear-gradient(55deg,#fc1abd,#e19cfa,#72d9ff);
+    width: 320px;
+    height:30px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
 }

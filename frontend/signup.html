@@ -3,62 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="signup.css">
 </head>
-<body>
-    <!--------------------navbar------------------->
-    <nav id="nav">
-        <div id="nmaindiv">
-           <div id="logo">Book Worm</div>
-           <div id="search">
-             <input type="search" placeholder="Search your Book">
-           </div>
-           <div id="button">
-             <button>Prime</button>
-             <button>login</button>
-             <button>shop</button>
-           </div>
+<body style="margin: auto; background-color: #b1e9ff;">
+    <div class="mainDiv" ">
+        <div class="navbarInsideDiv1"">
+            <img class="divImg" src="https://www.bookwormreads.co/_next/static/media/icon.958935e1.png" alt="">
         </div>
-      </nav>
-     <!-------------- navbar ends here ----------------->
-    <!-- --------form for signup------------------ -->
-    <div id="maindiv">
-        <div id="text">
-            <h1>WELCOME</h1>
+        <div class="navbarInsideDiv">
+            <input type="text" placeholder="serach for books & friends">
+            <img style="cursor: pointer;" src="https://www.bookwormreads.co/_next/static/media/sparkles.57811128.png" alt="">
+            <button class="navbarButton" >
+                <i class="fa fa-user-circle" style="font-size: 30px;color: white;" aria-hidden="true"></i>
+            </button>
+            <button class="navbarButton">
+                <i class="fa fa-home" style="font-size: 30px; color: white;"  aria-hidden="true"></i>
+            </button>     
         </div>
-        <div id="container">
-            <form action="" id="form">
-              <h3 style="text-align: center;">Create an Account</h3>
-              <p style="font-size: 13px;margin-top: -10px;">Shopping for your business?<a href="index.html">Create a business account.</a></p>
-              <label for="">Your name</label>
-              <input type="text" placeholder="First Name" id="cusName">
-              <input type="text" placeholder="Last Name">
-              <label for="">Mobile number</label> -->
-              <div>
-              <select name="" id="selectCode">
-                <option value="">IN +91</option>
-                <option value="">IN +91</option>
-                <option value="">IN +91</option>
-              </select>
-              </div>
-              <input type="email" id="email1" placeholder="Email Address">
-              <label for="">Email Address</label>
-    
-              <label for="">Password</label>
-    
-              <input type="password" placeholder="Password" id="pass">
-              <p id="para1"> Passwords must be at least 6 characters.</p>
-              <input type="Password" placeholder="Confirm Password">
-              <input type="number" placeholder="Mobile number" id="number">
-              <input type="submit" value="Create an Account" id="submit">
-            </form>
-            <p>
-            Already have an account? <a href="login.html">Sign In</a>
-            </p>
-        </div> 
     </div>
-
-    <!-- -------------------form for sign up ends here -->
+    <div style="margin-top: 110px;display: flex;justify-content: center;">
+      <img src="https://www.bookwormreads.co/_next/static/media/welcome.30775217.png" alt="" style="height:150px;">
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 30px;">
+        <div style="display: flex; flex-direction: column; width: 50%; align-items: center;">
+            <img src="https://www.bookwormreads.co/_next/static/media/base.c40d6898.png" alt="" style="height: 200px; width: 200px;">
+            <div style="display: flex;gap: 50px;margin-top: 20px;">
+                <button class="signButton" onclick="handalClothes()">Clothes</button>
+                <button class="signButton" onclick="handalHats()">Hats</button>
+                <button class="signButton" onclick="handalShoes()">shoes</button>
+                <button class="signButton" onclick="handalaccessories()">accessories</button>
+            </div>
+            <div id="appendDiv">
+               
+            </div>
+        </div>
+        <div style="display: flex;flex-direction: column; margin-bottom: 40px;">
+            <label>username</label>
+            <input class="signIninput" type="text" name="" id="username>
+            <p  class="signInp">
+                this is public and you can change it later. worm <br> puns encouraged
+            </p>
+            <label for="">Password</label>
+            <input class="signIninput" type="password" id="pass">
+            <label for="">Email</label>
+            <input class="signIninput" type="email" id="email">
+            <p class="signInp">
+                so you can log in with a magic code sent to your <br> email
+            </p>
+            <label for="">name</label>
+            <input class="signIninput" type="name" id="name">
+            <p class="signInp">
+                this is optional; so friends can find you by name
+            </p>
+            <label for="">Bio</label>
+            <input class="signIninput" type="text" id="bio">
+            <p class="signInp">
+                tell the worms about yourself
+            </p>
+            <h3>your social media</h3>
+            <label for="">instagram username</label>
+            <div style="display: flex;align-items: center;gap: 10px; margin-top: 5px;margin-bottom: 5px;">
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size: 30px;"></i>
+                <i class="fa fa-at" aria-hidden="true" style="font-size: 25px;"></i>
+                <input type="text" style="width: 260px;height: 30px;border-radius: 5px;">
+            </div>
+            <label for="">twitter handle</label>
+            <div style="display: flex;align-items: center;gap: 10px; margin-top: 5px;margin-bottom: 5px;">
+                <i class="fa fa-twitter" aria-hidden="true" style="font-size: 30px;"></i>
+                <i class="fa fa-at" aria-hidden="true" style="font-size: 25px;"></i>
+                <input type="text" style="width: 255px;height: 30px;border-radius: 5px;">
+            </div>
+            <label for="">tiktok username</label>
+            <div style="display: flex;align-items: center;gap: 10px; margin-top: 5px;margin-bottom: 5px;">
+                <i class="fa fa-tencent-weibo" aria-hidden="true" style="font-size: 30px;"></i>
+                <i class="fa fa-at" aria-hidden="true" style="font-size: 25px;"></i>
+                <input type="text" style="width: 260px;height: 30px;border-radius: 5px;">
+            </div>
+            <h2>RULES OF CONDUCT</h2>
+            <p style="font-weight: 500;font-size: 20px;margin-top: -10px;">
+                Bookworm exists because <br>
+                reading is better together. <br>
+                The content on Bookworm is <br>
+                created for and by readers. It <br>
+                represents the many different <br>
+                perspectives of the community. <br>
+                No discrimination of any kind. No <br>
+                transphobia, no racism, no <br>
+                ableism, no religious <br>
+                discrimination. No hate speech or <br>
+                bullying of any kind. We reserve <br>
+                the right to delete posts for any <br>
+                reason.
+            </p>
+            <button class="joinButton" >Join Bookworm</button>
+        </div>
+    </div>
 </body>
+<script type="text/javascript" src="Data.json"></script>
+ <script src="signup.js">
+   
+  
+ </script>
 </html>
