@@ -3,10 +3,11 @@ const UserModel=require("../model/user.model")
 const bcrypt = require('bcrypt')
 var jwt = require('jsonwebtoken')
 const userRouter=express.Router()
+const {fav}=require("../middleware/fav.middleware")
 
 
 // --------------sign up route------------------//
-userRouter.post("/signup",async(req,res)=>{
+userRouter.post("/signup",fav,async(req,res)=>{
     const {userName,pass,email,name,bio}=req.body
     try {
       const user=await UserModel.findOne({email})
