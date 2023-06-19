@@ -1,5 +1,4 @@
 const mongoose=require("mongoose")
-const { stringify } = require("qs")
 
 const userSchema=mongoose.Schema({
     userName:String,

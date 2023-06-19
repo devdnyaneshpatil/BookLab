@@ -1,37 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profile.css">
-    <title>Document</title>
-</head>
-<body>
-    <!--------------------navbar------------------->
-    <nav id="nav">
-        <div id="maindiv">
-           <div id="logo">Book Worm</div>
-           <div id="search">
-             <input type="search" placeholder="Search your Book">
-           </div>
-           <div id="button">
-             <button>Prime</button>
-             <button>login</button>
-             <button>shop</button>
-           </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookwormProfile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="cont">
+        <div class="mainDiv">
+            <div class="navbarInsideDiv1">
+                <img class="divImg" src="https://www.bookwormreads.co/_next/static/media/icon.958935e1.png" alt="">
+            </div>
+            <div class="navbarInsideDiv">
+                <input type="text" placeholder="serach for books & friends">
+                <img style="cursor: pointer;" src="https://www.bookwormreads.co/_next/static/media/sparkles.57811128.png" alt="">
+                <button class="navbarButton" >
+                    <i class="fa fa-user-circle" style="font-size: 30px;color: white;" aria-hidden="true"></i>
+                </button>
+                <button class="navbarButton">
+                    <i class="fa fa-home" style="font-size: 30px; color: white;"  aria-hidden="true"></i>
+                </button>     
+            </div>
         </div>
-      </nav>
-     <!-------------- navbar ends here ----------------->
-    
-     <!-- ------------profile page starts here--------- -->
-     <div id="container">
-        <div id="left">
-            <div id="logo">logo</div>
-            <h1>Dnyaneshwar_patil</h1>
-            <h2>Name</h2>
-            <h6></h6>
+      <div class="middlecont">
+        <div class="middleleft">
+          <center>
+            <img
+              id="leftimage"
+              src="https://www.bookwormreads.co/_next/static/media/base.c40d6898.png"
+              alt=""
+            />
+          </center>
+
+          <div class="userid">
+            <h1>USER@123</h1>
+            <button class="leftbtn">edit profile</button>
+          </div>
+          <h3>Dnyaneshwar Patil</h3>
+          <p>joined today</p>
+          <button class="logout">log out</button>
+          <br /><br /><br />
+          <div class="profilewindow">
+            <img
+              class="img1"
+              src="https://www.bookwormreads.co/_next/static/media/stars.5cb9092c.png"
+              alt=""
+            />
+            <img
+              class="midimg"
+              src="https://www.bookwormreads.co/_next/static/media/base.c40d6898.png"
+              alt=""
+            />
+            <img
+              class="img1"
+              src="https://www.bookwormreads.co/_next/static/media/stars-inverse.0599a74c.png"
+              alt=""
+            />
+            <h4><span>Dnyaneshwar Patil </span>Just joined bookworm!</h4>
+          </div>
         </div>
-        <div id="right"></div>
-     </div>
-</body>
+        <div class="middleright">
+          <h1>import from goodreads</h1>
+          <h3>or storygraph, or library thing, or...</h3>
+          <p>drag & drop or click to select your csv</p>
+          <input type="file" placeholder="Choose File" />
+          <button class="btn1">Tell me how</button>
+          <button class="btn2">lez do it</button>
+          <h1>my library</h1>
+          <a href="main.html">currently reading(0)</a><br />
+          <a href="">recommended(0)</a><br />
+          <a href="">to read(0)</a><br />
+          <a href="">finished(0)</a><br /> 
+          <a href="">favourites(0)</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -6,8 +6,8 @@ const bookSchema=mongoose.Schema({
     user:String,
     title:String,
     author:String,
-    price:Number,
-    availale_on:String
+    description:String,
+    img:String
 })
 
 const BookModel=mongoose.model("book",bookSchema)

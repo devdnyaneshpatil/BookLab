@@ -1,109 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-#nav{
-    background-color:#EA80FC;
-    height: 50px;
-}
-#nmaindiv{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
+
+#mainDiv{
+	background-color: #73dcfc;
+	margin: auto;
+	margin-top: 150px;
+	/*border: 1px solid red;*/
+	width: 1250px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
 }
 
-#logo{
-    margin-left: 150px;
-}
-#button button{
-  color: blue;
+#mainDiv>div{
+	/*border: 1px solid blue;*/
+	/* background-color: red; */
+	margin-top: 30px;
+	width: 370px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 14px;
 }
 
-#maindiv{
-    background-color: #0dcaf0;
-    height: 100vh;
+#secDiv1>p{
+	    margin: 0px;
 }
-#container{
-    width: 25%;
-    margin: auto;
-    align-content: center;
-    /* border: 1px solid red; */
-    padding: 15px;
-    background-color: #f0f2f4;
-    border-radius: 10px;
+#secDiv1>p:nth-child(1){font-size: 28px;margin-top: 0px;font-weight: bolder;}
+#secDiv1>p:nth-child(2){font-size: 18px;margin-top: 8px;font-weight: bold;}
+#secDiv1>p:nth-child(3){font-size: 17px;margin-top: 7px;}
+#secDiv1>p:last-child{font-size: 14px;margin-top: 7px;}
+
+li{
+	margin: 7px 0px;
 }
-#NavbarMainDiv img{
-  width: 5%;
-  margin-left: 200px;
-/* margin-left: 50px; */
-   }
-   #NavbarMainDiv a{
-    margin-right: 300px;
-    color: white;
-   }
-#showDiv{
-    width: 100%;
-    height: 6px;
-    margin-top: 85px;
-    background-color: white;
-    margin-bottom: 50px;
+#secDiv2{
+	color: #404040;
+	border: 2px solid white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: linear-gradient(#72d9ff,#86ffe1);
 }
-#container{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+
+.heading>p{
+	text-align: center;
 }
-#form{
-    display: grid;
-    grid-template-columns: repeat(1,90%);
-    padding-left: 15px;
-    /* box-sizing: content-box; */
+
+.heading>P:first-child{
+	    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 14px;
+        margin-top: 10px;
 }
-input{
-    height: 25px;
+.heading>p:nth-child(2){
+    font-size: 40px;
+    margin-top: 0px;
     margin-bottom: 10px;
-    /* border-radius: 1px ; */
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
 }
-input:placeholder-shown{
-    font-size: 16px;
-    color:black;
-    font-weight: bold;
+.Login{
+	margin: auto;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
 }
-/* h2{
-    font-size: 30px;
-    margin-top: 10px;
-} */
-input:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 1px solid orangered;
+.Login>p{
+	margin: 0px;
 }
-#submit{
-    height: 40px; 
-    background-color:blue;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
+.newUser{
+	    font-size: 28px; 
+      text-align: center;
 }
-#container>p{
-    padding-left: 12px;
+
+.Login button{
+  margin:16px 0px;
+  /*background-color: #c2fbd7;*/
+  background: linear-gradient(505deg,#fc1abd,#e19cfa,#72d9ff);
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-a{
-    text-decoration: none;
+
+.Login button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }
-#para1{
-    margin-top: -5px;
-    font-size: 14px;
-}
-#text{
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
+
+/*.st1button{
+	background: linear-gradient(505deg,#fc1abd,#e19cfa,#72d9ff)  !important;
+}*/

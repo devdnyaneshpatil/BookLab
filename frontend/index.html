@@ -1,92 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookWorm home page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">\
-    <link rel="stylesheet" href="style.css">
-    <title>Book Worm</title>
-</head>
-<body>
-    <!--------------------navbar------------------->
-     <nav id="nav">
-       <div id="maindiv">
-          <div id="logo">Book Worm</div>
-          <div id="search">
-            <input type="search" placeholder="Search your Book">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+   
+      <div class="Navbar"><div class="mainDiv" ">
+        <div class="navbarInsideDiv1"">
+            <img class="divImg" src="https://www.bookwormreads.co/_next/static/media/icon.958935e1.png" alt="">
+        </div>
+        <div class="navbarInsideDiv">
+            <input type="text" placeholder="serach for books & friends">
+            <img style="cursor: pointer;" src="https://www.bookwormreads.co/_next/static/media/sparkles.57811128.png" alt="">
+            <a href="login.html">
+            <button class="navbarButton" >
+                <i class="fa fa-user-circle" style="font-size: 30px;color: white;" aria-hidden="true"></i>
+            </button>
+            </a>
+            <button class="navbarButton">
+                <i class="fa fa-home" style="font-size: 30px; color: white;"  aria-hidden="true"></i>
+            </button>     
+        </div>
+    </div></div>
+    <div class="Container">
+      <div class="Midcontainer">
+        <center>
+          <h1 class="Heading">welcome to Bookworm Reads</h1>
+          <div class="Heading-Flex">
+            <h1 class="heading3">where reading is better together</h1>
+            <img
+              id="HeartImg"
+              src="https://www.bookwormreads.co/_next/static/media/wormy_heart.93d84796.png"
+              alt=""
+            />
           </div>
-          <div id="button">
-            <button>Prime</button>
-            <button>login</button>
-            <button>shop</button>
+        </center>
+        <div class="Btn-cont">
+          <button>
+            <img
+              class="btn"
+              src="https://www.bookwormreads.co/_next/static/media/app-store-download.6f846953.svg"
+              alt=""
+            />
+          </button>
+          <button>
+            <img
+              class="btn"
+              src="https://www.bookwormreads.co/_next/static/media/google-play-badge.78b8e90e.png"
+              alt=""
+            />
+          </button>
+        </div>
+        <!-- first block -->
+        <div class="mid-cont">
+          <div class="text-cont1">
+            <div class="inner1">
+              <h1 class="heading2">Discover what your friends are reading</h1>
+              <p class="disc">
+                Find out which books your friends loved, what you must read
+                next, and which ones everyone decided to abandon. Plus, make new
+                wormy friends (& crushes) through the community.
+              </p>
+            </div>
+            <div class="inner1">
+              <h1 class="heading2">Track your books</h1>
+              <p class="disc">
+                Keep account of the books you want to read, finished, loved,
+                couldn’t get through, saw on booktok, whatever. Rate and review
+                books to your heart’s delight—half stars included.
+              </p>
+            </div>
           </div>
-       </div>
-     </nav>
-    <!-------------- navbar ends here ----------------->
-
-    <!----------------body part start here --------------------->
-     <div id="body">
-        <div  id="welcome">
-          <div id="topsection">
-            <h1>welcome to Bookworm Reads</h1>
-            <h2>where reading is better together</h2>
-            <button>mac</button>
-            <button>playstore</button>
-          </div>
-
-          <div id="section1">
-            <h2>Discover what your friends are reading</h2>
-            <p>Find out which books your friends loved, what you must read next,<br>
-                 and which ones everyone decided to abandon. Plus, make new <br>
-                 wormy friends (& crushes) through the community.</p> 
-          </div>
-
-          <div id="section2">
-            <h2>Track your books</h2>
-            <p>Keep account of the books you want to read, finished, loved,<br>
-                 couldn’t get through, saw on booktok, whatever. Rate and review <br>
-                 books to your heart’s delight—half stars included.</p>
-          </div>
-
-          <div id="section3">
-            <h2>Recommend books to friends</h2>
-            <p>Send your friends books you know they’ll love, and get notified <br>
-                when they start & finish reading them!</p>
-          </div>
-
-          <div id="section4">
-            <h2>Customize your bookshelves</h2>
-            <p>Design your library to your suit your personal categorizing quirks. <br>
-                Your library comes pre-installed with currently reading, to read, and <br>
-                finished shelves. <br>
-                Create any new shelves that suit your library, no power-tools needed.</p>
-          </div>
-
-          <div id="section5">
-            <h2>Join community reading challenges</h2>
-            <p>With the change of seasons comes a new reading challenge. Join by <br>
-                setting a reading goal—only you can see the number you set, but <br>
-                your friends can cheer you on along the way. And when you join, you <br>
-                get a cute accessory for your wormy.</p>
-          </div>
-
-          <div id="section6">
-            <h2>Import from Goodreads</h2>
-            <p>Coming from Goodreads? There's no need to manually import all the <br>
-                 books your library! Import your library from Goodreads so you can <br>
-                 say good readdance to Amazon-owned apps.</p>
-          </div>
-
-          <div id="section7">
-            <h2></h2>
-            <p>Choose your wormy's outfit to express your creativity. Make a bio to <br>
-                tell the community about yourself. Link your socials so we can get to <br>
-                know you better.</p>
+          <div class="img-cont1">
+            <img
+              id="cross-img"
+              src="https://www.bookwormreads.co/_next/static/media/discover.99213379.png"
+              alt=""
+            />
           </div>
         </div>
-     </div>
-
-</body>
+        <div class="line-img">
+          <img
+            id="spec-img"
+            src="https://www.bookwormreads.co/_next/static/media/parade-right.903fad00.png"
+            alt=""
+          />
+        </div>
+        <!-- second block -->
+        <div class="mid-cont spec-cont">
+          <div class="img-cont2">
+            <img
+              id="cross-img2"
+              src="https://www.bookwormreads.co/_next/static/media/become.5cf52fd8.png"
+              alt=""
+            />
+          </div>
+          <div class="mid-cont">
+          <div class="text-cont2">
+            <div class="inner1">
+              <h1 class="heading2">Discover what your friends are reading</h1>
+              <p class="disc">
+                Find out which books your friends loved, what you must read
+                next, and which ones everyone decided to abandon. Plus, make new
+                wormy friends (& crushes) through the community.
+              </p>
+            </div>
+            <div class="inner1">
+              <h1 class="heading2">Track your books</h1>
+              <p class="disc">
+                Keep account of the books you want to read, finished, loved,
+                couldn’t get through, saw on booktok, whatever. Rate and review
+                books to your heart’s delight—half stars included.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="line-img">
+        <img
+          id="spec-img"
+          src="https://www.bookwormreads.co/_next/static/media/parade-left.742d3935.png"
+          alt=""
+        />
+      </div>
+      <!-- third block -->
+          <div class="mid-cont spec-cont">
+            <div class="text-cont1">
+              <div class="inner1">
+                <h1 class="heading2">Discover what your friends are reading</h1>
+                <p class="disc">
+                  Find out which books your friends loved, what you must read
+                  next, and which ones everyone decided to abandon. Plus, make new
+                  wormy friends (& crushes) through the community.
+                </p>
+              </div>
+              <div class="inner1">
+                <h1 class="heading2">Track your books</h1>
+                <p class="disc">
+                  Keep account of the books you want to read, finished, loved,
+                  couldn’t get through, saw on booktok, whatever. Rate and review
+                  books to your heart’s delight—half stars included.
+                </p>
+              </div>
+            </div>
+            <div class="img-cont1">
+              <img
+                id="cross-img"
+                src="https://www.bookwormreads.co/_next/static/media/challenge.aca885fb.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="line-img">
+            <img
+              id="spec-img"
+              src="https://www.bookwormreads.co/_next/static/media/parade-right.903fad00.png"
+              alt=""
+            />
+          </div>
+           <!-- fourth block -->
+      <div class="mid-cont spec-cont">
+        <div class="img-cont2">
+          <img
+            id="cross-img2"
+            src="https://www.bookwormreads.co/_next/static/media/become.5cf52fd8.png"
+            alt=""
+          />
+        </div>
+        <div class="mid-cont">
+        <div class="text-cont2">
+          <div class="inner1">
+            <h1 class="heading2">Discover what your friends are reading</h1>
+            <p class="disc">
+              Find out which books your friends loved, what you must read
+              next, and which ones everyone decided to abandon. Plus, make new
+              wormy friends (& crushes) through the community.
+            </p>
+          </div>
+          <div class="inner1">
+            <h1 class="heading2">Track your books</h1>
+            <p class="disc">
+              Keep account of the books you want to read, finished, loved,
+              couldn’t get through, saw on booktok, whatever. Rate and review
+              books to your heart’s delight—half stars included.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="bottomcont">
+        <center>
+        <h1 class="bottomheading">get The Dirt</h1>
+        <p class="bottompara">get Bookworm's monthly-ish newsletter in your inbox, so you stay</p>
+        <p class="bottompara">up-to-date on all things Bookworm</p>
+        <div class="spebtn">
+          <input class="spe1" type="text" placeholder="wormy@bookwormreads.co">
+          <button class="spe2">Subscribe</button>
+        </div>
+      </center>
+    </div>
+    </div>
+    
+    </div>
+  </body>
+  <script>
+  </script>
 </html>

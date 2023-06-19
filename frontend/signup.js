@@ -2,6 +2,10 @@
 //     const res = await fetch(db.json);
 //     const jsonData = await response.json();
 //     console.log(jsonData);
+
+// const { json } = require("body-parser");
+// const { application } = require("express");
+
 // }
 let Data={
     Closth:{
@@ -118,20 +122,23 @@ function handalaccessories(){
     })
 }
 
-let usernameel=document.getElementById("username")
-let passel=document.getElementById("pass")
-let emailel=document.getElementById("email")
-let nameel=document.getElementById("name")
-let bioel=document.getElementById("bio")
-let joinbutton=document.getElementsByClassName("joinButton")
 
-  joinbutton.addEventListener('click',function(){
-     let obj={
-         user_name:usernameel.value,
-         pass:passel.value,
-         email:emailel.value,
-         name:nameel.value,
-         bio:bioel.value
-     }
-     console.log(obj)
-  })
+  const joinButton=()=>{
+    const obj={
+        userName:document.getElementById("username").value,
+        pass:document.getElementById("pass").value,
+        email:document.getElementById("email").value,
+        name:document.getElementById("name").value,
+        bio:document.getElementById("bio").value
+    }
+    fetch("http://localhost:8080/user/signup",{
+        method:"POST",
+        headers:{
+            "Content-type": "application/json"
+        },
+        body:JSON.stringify(obj)
+    })
+    .then((res)=>res.json())
+    .then((res)=>console.log(res))
+    .catch((err)=>console.log(err))
+  }
