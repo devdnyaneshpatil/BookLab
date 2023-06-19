@@ -1,65 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
-    <title>Document</title>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="login.css" media="screen" />
+<link rel="stylesheet" href="signup.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <!--------------------navbar------------------->
-    <nav id="nav">
-        <div id="nmaindiv">
-           <div id="logo">Book Worm</div>
-           <div id="search">
-             <input type="search" placeholder="Search your Book">
-           </div>
-           <div id="button">
-             <button>Prime</button>
-             <button>login</button>
-             <button>shop</button>
-           </div>
+<body style="background-color: #b1e9ff;margin: auto;">
+    <div class="mainDiv" ">
+        <div class="navbarInsideDiv1"">   
+            <img class="divImg" src="https://www.bookwormreads.co/_next/static/media/icon.958935e1.png" alt="">
         </div>
-      </nav>
-     <!-------------- navbar ends here ----------------->
-    <!-- --------form for signup------------------ -->
-    <div id="maindiv">
-        <div id="text">
-            <h1>WELCOME</h1>
+        <div class="navbarInsideDiv">
+            <input type="text" placeholder="serach for books & friends">
+            <img style="cursor: pointer;" src="https://www.bookwormreads.co/_next/static/media/sparkles.57811128.png" alt="">
+            <button class="navbarButton" >
+                <i class="fa fa-user-circle" style="font-size: 30px;color: white;" aria-hidden="true"></i>
+            </button>
+            <button class="navbarButton" >
+				<a href=""></a>
+                <i class="fa fa-home" style="font-size: 30px; color: white;"  aria-hidden="true"></i>
+            </button>     
         </div>
-        <div id="container">
-            <form action="" id="form">
-              <h3 style="text-align: center;">Login to Your Account</h3>
-              <!-- <p style="font-size: 13px;margin-top: -10px;">Shopping for your business?<a href="index.html">Create a business account.</a></p> -->
-              <!-- <label for="">Your name</label>
-              <input type="text" placeholder="First Name" id="cusName">
-              <input type="text" placeholder="Last Name">
-              <label for="">Mobile number</label> -->
-              <!-- <div>
-              <select name="" id="selectCode">
-                <option value="">IN +91</option>
-                <option value="">IN +91</option>
-                <option value="">IN +91</option>
-              </select> -->
-              <!-- </div> --> -->
-              <label for="">Email Address</label>
-              <input type="email" id="email1" placeholder="Email Address">
-              
-    
-              <label for="">Password</label>
-    
-              <input type="password" placeholder="Password" id="pass">
-              <p id="para1"> Passwords must be at least 6 characters.</p>
-              <!-- <input type="Password" placeholder="Confirm Password">
-              <input type="number" placeholder="Mobile number" id="number"> -->
-              <input type="submit" value="Login" id="submit">
-            </form>
-            <p>
-            Don't have an account? <a href="login.html">Join Bookworm</a>
-            </p>
-        </div> 
     </div>
 
-    <!-- -------------------form for sign up ends here -->
+     <div id="mainDiv">
+        <div id="secDiv1">
+		 <p>Become a BookWorm Pro</p>
+		 <p>go ProWorm</p>
+		 <p>get access to the coolest new features-and worms</p>
+		 <div>
+			   <ul>
+				 <li>Invest in an independent bookcommunity that's by and for readers,anti-Amazon, and member-owned</li>
+				 <li>CHOOSE A BESTIEFOR YOUR WORM!!!!!</li>
+				 <li>Recieve Priority support</li>
+				 <li>Multi-worm collaborative shelves(coming soon)</li>
+				 <li>And more soon!</li>
+			   </ul>
+	     </div>
+		 <p>Bookworm pro subscriptions are tied to your bookworm account. That means no matter what device you use,you'll always br Pro. Yay!</p>
+	     </div>
+         <div id="secDiv2">
+			 <div class="heading">
+				 <p>since Bookworm Pro is attatched to your account, you have to log in first</p>
+				 <p>Log In</p>
+			 </div>
+			 <div class="Login">
+				 <p>username or email</p>
+				 <input 
+				style="height: 30px;border-radius: 7px;border: none;margin-bottom: 7px;" type="text" placeholder="wormy" id="email"/>
+				 <p>password</p>
+				 <input style="height: 23px;border-radius: 7px;border: none;margin-bottom: 7px;" type="password" placeholder="" id="pass"/>
+				 <a href="profile.html"><button class="button1" onclick="login()">come in</button></a>
+				 <button class="button2">email me a magic code</button>
+				 <p class="newUser">New User</p>
+				 <a href="signup.html">
+					<button class="button3">join bookworm</button>
+				 </a>
+			 </div>
+        </div>
+	 </div>
+     
 </body>
+<script>
+   const login=()=>{
+	let obj={
+	   email:document.getElementById("email").value,
+	   pass:document.getElementById("pass").value
+	}
+	console.log(obj)
+	fetch("http://localhost:8080/user/login",{
+		method:"POST",
+		headers:{
+			"Content-type":"appliction/json"
+		},
+		body:JSON.stringify(obj)
+	})
+	.then((res)=>res.json())
+    .then((res)=>console.log(res.token))
+    .catch((err)=>console.log(err))
+   }
+</script>
 </html>

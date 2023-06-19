@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="signup.css">
 </head>
 <body style="margin: auto; background-color: #b1e9ff;">
-    <div class="mainDiv" ">
+    <div class="mainDiv" >
         <div class="navbarInsideDiv1"">
             <img class="divImg" src="https://www.bookwormreads.co/_next/static/media/icon.958935e1.png" alt="">
         </div>
@@ -41,24 +41,24 @@
             </div>
         </div>
         <div style="display: flex;flex-direction: column; margin-bottom: 40px;">
-            <label>username</label>
-            <input class="signIninput" type="text" name="" id="username>
-            <p  class="signInp">
-                this is public and you can change it later. worm <br> puns encouraged
-            </p>
-            <label for="">Password</label>
+            <label for="username">username</label>
+            <input class="signIninput" type="text"  id="username">
+            
+                <!-- this is public and you can change it later. worm <br> puns encouraged -->
+            <!-- </p> -->
+            <label for="pass">Password</label>
             <input class="signIninput" type="password" id="pass">
-            <label for="">Email</label>
+            <label for="email">Email</label>
             <input class="signIninput" type="email" id="email">
             <p class="signInp">
                 so you can log in with a magic code sent to your <br> email
             </p>
-            <label for="">name</label>
-            <input class="signIninput" type="name" id="name">
+            <label for="name">name</label>
+            <input class="signIninput" type="text" id="name">
             <p class="signInp">
                 this is optional; so friends can find you by name
             </p>
-            <label for="">Bio</label>
+            <label for="bio">Bio</label>
             <input class="signIninput" type="text" id="bio">
             <p class="signInp">
                 tell the worms about yourself
@@ -98,13 +98,11 @@
                 the right to delete posts for any <br>
                 reason.
             </p>
-            <button class="joinButton" >Join Bookworm</button>
+            <a href="login.html">
+                <button class="joinButton" onclick="joinButton()" >Join Bookworm</button>
+            </a>
         </div>
     </div>
 </body>
-<script type="text/javascript" src="Data.json"></script>
- <script src="signup.js">
-   
-  
- </script>
+ <script src="signup.js"></script>
 </html>
