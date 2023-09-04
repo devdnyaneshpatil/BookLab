@@ -1,13 +1,16 @@
 const mongoose=require("mongoose")
 
 const bookSchema=mongoose.Schema({
-    user_id:String,
-    user_name:String,
-    user:String,
-    title:String,
+    name:String,
     author:String,
     description:String,
-    img:String
+    category:String,
+    price:{
+        type:Number,
+        default:0
+    },
+    img:String,
+    retailer:[String]
 })
 
 const BookModel=mongoose.model("book",bookSchema)
