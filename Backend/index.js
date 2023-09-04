@@ -4,6 +4,7 @@ const connection=require("./db")
 const userRouter=require("./routes/user.routes")
 const bookRouter=require("./routes/book.routes")
 const favRouter=require("./routes/fav.routes")
+require("dotenv").config()
 const app=express()
 
 // -----------middleware-----------------//
@@ -15,11 +16,11 @@ app.use("/fav",favRouter)
  
 // ----------------??-------------------//
 
-app.listen(8080,async()=>{
+app.listen(process.env.PORT,async()=>{
     try {
         await connection
         console.log("connected to the db")
-        console.log("server is running at 8080") 
+        console.log(`server is running at ${process.env.PORT}`) 
     } catch (error) {
         console.log(error)
     }
